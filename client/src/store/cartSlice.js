@@ -24,7 +24,7 @@ export const cartSlice = createSlice({
             // Return an empty array to reset state
             return [];
           },
-          removeItem: (state, action) => {
+        removeItem: (state, action) => {
             const updatedCart = state.filter(item => item._id !== action.payload);
             if (typeof window !== 'undefined') {
                 localStorage.setItem('cart', JSON.stringify(updatedCart));

@@ -70,9 +70,7 @@ const HeaderBar = () => {
             <Link to="#" className="menu-bars">
               <MenuItem onClick={handleClose}>Profile</MenuItem>
             </Link>
-            
               <MenuItem onClick={handleLogout}>LOGOUT</MenuItem>
-            
           </Menu>
         </IconButton>
       </Box>
